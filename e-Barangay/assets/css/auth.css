@@ -1,0 +1,129 @@
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Auth Card */
+.auth-box {
+    width: 420px;
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+.seal {
+    width: 95px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 26px;
+    color: #006A2E;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.subtext {
+    margin-bottom: 20px;
+    font-size: 13px;
+    color: #444;
+}
+
+/* Input Fields */
+.input-group {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 14px;
+}
+
+.input-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+    transition: .3s;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    border-color: #006A2E;
+}
+
+/* Button */
+.btn {
+    width: 100%;
+    padding: 13px;
+    background: #006A2E;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background .3s ease;
+}
+
+.btn:hover {
+    background: #044d20;
+}
+
+/* Link to Login */
+.redirect {
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+.redirect a {
+    color: #006A2E;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.redirect a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+    .auth-box {
+        width: 90%;
+        padding: 25px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+}

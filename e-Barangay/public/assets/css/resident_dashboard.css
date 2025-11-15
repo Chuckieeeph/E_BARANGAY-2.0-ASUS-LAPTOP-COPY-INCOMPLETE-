@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #F3F5F7;
+}
+
+.layout {
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: #006A2E;
+    color: #fff;
+    min-height: 100vh;
+    padding-top: 10px;
+    position: fixed;
+}
+
+.brand {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.logo {
+    width: 85px;
+    display: block;
+    margin: 0 auto;
+}
+
+.menu a {
+    display: block;
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.menu a.active,
+.menu a:hover {
+    background: #03863A;
+}
+
+.menu .logout {
+    background: #B40000;
+}
+
+.main {
+    flex-grow: 1;
+    margin-left: 250px;
+    padding: 20px;
+}
+
+/* Top Bar */
+.topbar {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Alerts */
+.alert {
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+.alert.warning {
+    background: #FFF3CD;
+    border-left: 5px solid #D7A600;
+}
+.alert.success {
+    background: #D3F2D0;
+    border-left: 5px solid #0E7A2D;
+}
+
+.btn.small {
+    background: #006A2E;
+    border-radius: 5px;
+    padding: 6px 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn.small:hover {
+    background: #03863A;
+}
+
+/* Cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 18px;
+}
+
+.card {
+    background: #fff;
+    text-align: center;
+    padding: 22px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.09);
+}
+
+.ok {
+    color: green;
+    font-weight: bold;
+}
+.bad {
+    color: red;
+    font-weight: bold;
+}

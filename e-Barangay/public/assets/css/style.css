@@ -1,0 +1,101 @@
+/* Global Style */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('../img/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Glass-like Login Card */
+.container {
+    width: 350px;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(6px);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+/* Logo */
+.logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Headings */
+h2 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+/* Inputs and Labels */
+label {
+    display: block;
+    text-align: left;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+input[type="email"], 
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+.btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-primary {
+    background: #007bff;
+    color: #fff;
+}
+
+.btn-secondary {
+    background: #28a745;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+/* Error Alert */
+.alert-error {
+    background-color: rgba(255, 50, 50, 0.8);
+    color: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+/* Small text */
+.small {
+    font-size: 12px;
+    color: #eee;
+    margin-top: 10px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 400px) {
+    .container { width: 90%; }
+}
